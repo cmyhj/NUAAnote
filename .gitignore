@@ -1,39 +1,4 @@
-# Obsidian 个人配置文件（不应提交到版本控制）
 .obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/app.json
-.obsidian/appearance.json
-.obsidian/community-plugins.json
-.obsidian/core-plugins.json
-
-# Obsidian Git 插件数据（包含个人配置和状态）
-.obsidian/plugins/obsidian-git/data.json
 .obsidian/obsidian_askpass.sh
 
-# 临时文件和冲突文件
-conflict-files-obsidian-git.md
-.git.zip
-
-# 系统文件
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# 编辑器临时文件
-*.swp
-*.swo
-*~
-*.tmp
-
-# 备份文件
-*.bak
-*.backup
-*~
-
-# 日志文件
-*.log
-
-# 操作系统生成的文件
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+///
