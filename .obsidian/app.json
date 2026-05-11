@@ -3,5 +3,6 @@
     "**/.course-internal/**",
     "**/semantic_rebuild/**"
   ],
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
