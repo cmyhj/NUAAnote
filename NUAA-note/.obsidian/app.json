@@ -1,0 +1,6 @@
+{
+  "userIgnoreFilters": [
+    "**/.course-internal/**",
+    "**/semantic_rebuild/**"
+  ]
+}
