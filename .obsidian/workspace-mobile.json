@@ -11,10 +11,14 @@
             "id": "a9297b46ea35d714",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "diff-view",
+              "state": {
+                "aFile": "01-Courses/机器人操作系统技术基础及应用/已整理课次.md",
+                "bFile": "01-Courses/机器人操作系统技术基础及应用/已整理课次.md",
+                "aRef": ""
+              },
+              "icon": "git-pull-request",
+              "title": "Diff: 已整理课次"
             }
           }
         ]
