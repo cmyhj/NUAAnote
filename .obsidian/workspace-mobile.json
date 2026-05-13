@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c4338f6f37c02380",
+        "id": "4f96f32eccee469d",
         "type": "tabs",
         "children": [
           {
-            "id": "a9297b46ea35d714",
+            "id": "8f02fb9a8a9de57b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-Concepts/控制系统工程Ⅱ/超调量.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "超调量"
+              "title": "新标签页"
             }
           }
         ]
@@ -100,8 +96,7 @@
         }
       }
     ],
-    "currentTab": 0,
-    "pinned": true
+    "currentTab": 0
   },
   "right": {
     "id": "1f57d8603761c0de",
@@ -177,8 +172,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9297b46ea35d714",
+  "active": "8f02fb9a8a9de57b",
   "lastOpenFiles": [
+    "02-Concepts/控制系统工程Ⅱ/超调量.md",
+    "未命名.canvas",
     "conflict-files-obsidian-git.md",
     "/04-Templates/课程总览模板.md",
     "/04-Templates/课次纪要模板.md",
@@ -205,8 +202,6 @@
     "/02-Concepts/机械工程有限元分析",
     "/02-Concepts/机器学习与人工智能导论/过拟合与欠拟合.md",
     "/02-Concepts/机器学习与人工智能导论/统计学习.md",
-    "/02-Concepts/机器学习与人工智能导论/线性回归.md",
-    "/02-Concepts/机器学习与人工智能导论/神经网络.md",
     "/02-Concepts/机器学习与人工智能导论",
     "/02-Concepts/机器人操作系统技术基础及应用",
     "/02-Concepts/智能传感与检测",
@@ -214,7 +209,6 @@
     "/01-Courses/智能传感与检测/课次",
     "01-Courses/机械工程有限元分析/course-config.json",
     "01-Courses/机器人操作系统技术基础及应用/course-config.json",
-    "/01-Courses/机械工程有限元分析/course-config.json",
-    "未命名.canvas"
+    "/01-Courses/机械工程有限元分析/course-config.json"
   ]
 }
