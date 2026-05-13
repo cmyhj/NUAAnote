@@ -2,7 +2,5 @@
   "userIgnoreFilters": [
     "**/.course-internal/**",
     "**/semantic_rebuild/**"
-  ],
-  "promptDelete": false,
-  "alwaysUpdateLinks": true
+  ]
 }
