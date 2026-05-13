@@ -13,7 +13,7 @@
 .obsidian/graph.json
 
 # 插件数据文件（包含个人设置，会频繁变化）
-.obsidian/plugins/*/*data.json
+.obsidian/plugins/
 
 # 插件脚本（可重新下载）
 .obsidian/plugins/obsidian-git/obsidian_askpass.sh
