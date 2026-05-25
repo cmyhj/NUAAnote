@@ -136,15 +136,15 @@ my_package/
 
 ### 2.3.4 常用命令
 
-| 命令 | 功能 |
-|------|------|
-| `catkin_create_pkg` | 创建功能包 |
-| `catkin_make` | 编译工作空间 |
-| `rospack` | 查找功能包信息 |
-| `roscd` | 跳转到功能包目录 |
-| `rosls` | 列出功能包目录内容 |
-| `rosrun` | 运行功能包中的节点 |
-| `roslaunch` | 启动 launch 文件 |
+| 命令                  | 功能           |
+| ------------------- | ------------ |
+| `catkin_create_pkg` | 创建功能包        |
+| `catkin_make`       | 编译工作空间       |
+| `rospack`           | 查找功能包信息      |
+| `roscd`             | 跳转到功能包目录     |
+| `rosls`             | 列出功能包目录内容    |
+| `rosrun`            | 运行功能包中的节点    |
+| `roslaunch`         | 启动 launch 文件 |
 
 ---
 
