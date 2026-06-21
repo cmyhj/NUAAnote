@@ -302,3 +302,46 @@ $$\mathcal{L} = \mathbb{E}_{t, \epsilon, x_1} \left[ \|v_\theta(x_t, t, c) - (x_
 
 这就是为什么 π0 等机器人基础模型选择 Flow Matching 而不是直接回归。
 [Timestamp: 2026/06/22 01:55:35]
+
+**user**: DDMP和flow matching都是在学分布吗
+[Context: Notes: 01-Courses/具身智能/flow matching.md]
+[Timestamp: 2026/06/22 02:13:13]
+
+**ai**: 是的，**两者本质上都是在学习数据分布 $p(x)$**，但走的是不同的路径。
+
+## 相同点：目标一致
+
+都是要建模数据分布 $p_{\text{data}}(x)$，从而能从中采样生成新数据。
+
+## 不同点：怎么学
+
+| | DDPM | Flow Matching |
+|---|---|---|
+| 前向过程 | 逐步加噪，路径**弯曲** | 直线插值，路径**直** |
+| 学习什么 | 噪声 $\epsilon_\theta(x_t, t)$ 或 score $\nabla_x \log p_t(x)$ | 速度场 $v_\theta(x_t, t)$ |
+| 用什么推 | SDE（随机微分方程） | ODE（常微分方程） |
+| 推理时 | 逐步去噪，步数多（~1000步） | ODE 积分，步数少（~10-50步） |
+
+## 更深层的区别
+
+虽然都在学分布，但**学的东西不同**：
+
+**DDPM** 学的是：
+$$\epsilon_\theta(x_t, t) \approx \epsilon \quad \text{（预测加了什么噪声）}$$
+或者等价地学 score：
+$$s_\theta(x_t, t) \approx \nabla_x \log p_t(x) \quad \text{（分布的梯度方向）}$$
+
+**Flow Matching** 学的是：
+$$v_\theta(x_t, t) \approx x_1 - \epsilon \quad \text{（预测速度 = 数据减噪声）}$$
+
+## 一个比喻
+
+想象你要从 A（噪声）走到 B（数据）：
+
+- **DDPM**：像在迷雾中走路，每一步看周围环境猜"我刚才是从哪个方向来的"（score），然后反着走。路径弯弯曲曲，走很多步。
+- **Flow Matching**：直接看地图，知道该往哪个方向走（速度场），沿着直线走过去。路径直，步数少。
+
+## 一句话总结
+
+> **两者都在学分布，但 DDPM 学的是"噪声是什么/score 梯度"（SDE路径，弯曲），Flow Matching 学的是"该往哪走"（ODE路径，直）。目标相同，手段不同。**
+[Timestamp: 2026/06/22 02:13:25]
